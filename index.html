@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meeting minutes</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+<body>
+    <header>
+        <div>Direct To...</div>
+        <nav>
+          <ul>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#unfinished">Unfinished Business</a></li>
+            <li><a href="#new">New Business</a></li>
+            <li><a href="#misc">Misc</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <hr>
+
+    <img width="600"
+     src="screenshots/example.png"
+     alt="The sample picture provided">
+
+    <main>
+        <h1>Groupwrok Meeting Minutes</h1>
+        <p> This meeting is specifically for the group homework for course <b>CSE110</b> <br>
+            <strong>Learning concepts is very important</strong> <br>
+            The data of this meeting is <i>2023/4/2</i> not <em>2023/4/1(important)</em> <br>
+
+        </p>
+        <h2 id="agenda">Agenda</h2>
+        <ol>
+            <li>
+                <p> Talk about support vector machine</p>
+            </li>
+            <li>
+                <p> Search demo code</p>
+            </li>
+        </ol>
+
+        <h2 id="unfinished">Unfinished Business</h2>
+        <ol>
+            <li>
+                <p> <input type="checkbox" />Complete hw on pca</p>
+            </li>
+            <li>
+                <p> <input type="checkbox" />Go to office hour for questions</p>
+            </li>
+        </ol>
+
+        <h2 id="new">New Business</h2>
+        <ol>
+            <li>
+                <p> Create Google Doc</p>
+            </li>
+            <li>
+                <p> Attend next lecture</p>
+            </li>
+        </ol>
+    </main>
+    <hr>
+    <form method="post">
+        <fieldset>
+          <legend>Are you satisfied with assigned work?</legend>
+          <label><input type="radio" name="radio" value="yes" /> Yes</label>
+          <label><input type="radio" name="radio" value="no" /> No</label>
+        </fieldset>
+    </form>
+    <br>
+    <label for="date">Date:</label>
+    <input type="date" id="start" name="trip-start"
+       value="2000-01-01"
+       min="2000-01-01" max="2024-01-01"> 
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10">
+    <br><br>
+    <label for="story">Share your comments/concerns:</label><br>
+    <textarea id="story" name="story"
+                rows="5" cols="33">
+    My concerns are...
+    </textarea>
+    <br>
+    <input type="button" value="Click to submit" />
+    <br>
+
+    <label for="job">Choose a job from this list:</label>
+    <input list="joblist" id="job" name="job" />
+    <datalist id="joblist">
+    <option value="coding"></option>
+    <option value="designing"></option>
+    <option value="planning"></option>
+    </datalist>
+    <br>
+
+    <label for="job-select">Choose a job:</label>
+    <select name="jobs" id="job-select">
+    <option value="">--Please choose an option--</option>
+    <option value="coding">Coding</option>
+    <option value="planning">Planning</option>
+    <option value="designing">Designing</option>
+    </select>
+    
+    <details>
+        <summary>My Fav Sound</summary>
+        This is by G.E.M!!!
+    </details>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+    </audio>
+    <hr>
+    <video
+        controls
+        src="video.mp4"
+        width="620"
+        height="800">
+    </video>
+    <hr>
+    <footer>
+        <h3 id="misc">Misc</h3> 
+        <section>
+            <h5><span class="miscs"> Logistics</span></h5>
+        </section>
+        <section>
+            <h5><span class="miscs"> Weekend Party</span></h5>
+        </section>
+        <section>
+            <h5><span class="miscs"> Homework</span></h5>
+        </section>
+    </footer>
+</body>
+</html>
